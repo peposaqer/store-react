@@ -1,10 +1,25 @@
-#cart-icon i {
-    font-size: 24px;
-    color:#000;
+#cart-icon a {
+    position: relative;
+    display: flex;
+}
+
+#cart-icon img {
+    margin-right: 0.5rem;
+}
+
+#cart-icon h1 {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #cart-icon span {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: -15px;
+    right: 16px;
+}
+
+.badge-danger {
+    background-color: #FFF100 !important;
+    color: #000 !important;
 }

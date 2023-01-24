@@ -2,14 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {connect} from "react-redux";
 import "./CartIcon.css";
+import Icon from "../img/Path 772.png"
+import CartItem from "./CartItem";
 
 function CartIcon(Props) {
-    return <div id="cart-icon">
-        <Link to="/cart">
-            <i className="fa fa-shopping-cart"></i>
-            <span className="badge badge-danger">{Props.totalQuantity}</span>
-        </Link>
-    </div>
+//   const { product } = Props;
+    return (
+        <>
+            <div id="cart-icon">
+                <Link to="/cart">
+                    <img src={Icon} />
+                    <h1>Cart</h1>
+                    <span className="badge badge-danger">{Props.totalQuantity}</span>
+                </Link>
+            </div>
+        </>
+    )
 }
 
 const mapStateToProps = (state) => {

@@ -14,11 +14,11 @@ class Cart extends React.Component {
   render() {
     return (
       <div>
-        <h1>cart</h1>
+        <h1> cart</h1>
 
         <div className="row">
           {this.props.cartItems.map((item, index) => (
-            <div className={"col-3"} key={index}>
+            <div className={"col-6"} key={index}>
               <CartItem item={item} index={index} />
             </div>
           ))}
