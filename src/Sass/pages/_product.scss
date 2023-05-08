@@ -1,0 +1,54 @@
+$bgColor: #FFF;
+$mainColor: #000;
+$headerColor: #868794;
+$tagsColor: #FFD56E;
+
+.details {
+    p {
+        font-size: 16px;
+    }
+    .card-price {
+        span {
+            display: inline;
+            color: #000;
+            font-size: 16px;
+            margin-right: 1rem;
+        }
+        .offer {
+            color: #FF4F4F;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.brand {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.quantity {
+    h1 {
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+    .increment {
+        display: flex;
+        input {
+            border: none;
+            background-color: transparent;
+            width: 10%;
+            text-align: center;
+        }
+        button {
+            background-color: $tagsColor;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+        }
+    }
+}

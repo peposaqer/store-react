@@ -10,18 +10,21 @@ function ProductItem(props) {
     <>
     <div className="mb-5">
         <div className='summary'>
-            <div className='cart'>
+            <div className='cartItem'>
                 <img src={product.image} />
                 <div>
                     <p>{product.description}</p>
-                    <span>Quantity: {item.quantity}</span>
+                    <strong>Quantity: {item.quantity}</strong>
                     <div className='remove'>
-                        <span className='price'>{product.price}</span>
-                        <button className='pickup' onClick={() => props.removeFromCart(index)}>Remove</button>
+                        <div className="card-price">
+                          <span>{product.price} EGP</span>
+                          <span className="offer">{product.discount} EGP</span>
+                        </div>
+                        <button className='pickup' onClick={() => props.removeFromCart(index)}><i className="fa-solid fa-trash"></i></button>
                     </div>
                 </div>
             </div>
-            <h1>Total: {item.quantity * product.price} LE</h1>
+            {/* <h1>Total: {product.price } EGP</h1> */}
         </div>
         <div className='buttons'>
             {/* <button className='pickup'>Review Cart</button> */}

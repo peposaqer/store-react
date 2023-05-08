@@ -1,0 +1,270 @@
+$bgColor: #FFF;
+$mainColor: #000;
+$headerColor: #868794;
+$tagsColor: #FFD56E;
+
+.header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .take {
+        height: 100%;
+        width: 80%;
+        padding-left: 3rem;
+        h1 {
+            color: #000;
+            font-size: 55px;
+        }
+        p {
+            color: #868794;
+            font-size: 16px;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #000000;
+            margin-top: 4rem;
+            margin-left: 2rem;
+            font-size: 20px;
+            span {
+                color: #656689;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+    .cute {
+            position: absolute;
+            left: -2rem;
+            width: 100%;
+            height: 450px;
+            border-radius: 0 35px 35px 0;
+            background-position: center center;
+            background-size: cover;
+            background-image: url('../../img/cute-little-gray-cat-yellow-looks-plays-buisiness-copyspace\ 1.png');
+        .cute-cat {
+            position: absolute;
+            bottom: -5rem;
+            right: -2rem;
+            border-radius: 30px;
+            background-position: center center;
+            background-size: cover;
+            border: 4px solid #FFF;
+        }
+    }
+}
+
+.us {
+    height: 100%;
+    padding: 5rem 0;
+    background: #FFD56E54;
+    text-align: center;
+    h1 {
+        color: #000;
+        font-size: 48px;
+        margin-bottom: 2rem;
+    }
+    p {
+        color: #868794;
+        font-size: 16px;
+        margin-bottom: 5rem;
+    }
+}
+
+.services {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 48px;
+        color: #000;
+    }
+    span {
+        color: #656689;
+        font-size: 16px;
+    }
+    .service {
+        background: #FFFAF5;
+        box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+        border-radius: 44px;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 3rem;
+        img {
+            width: 63px;
+            height: 63px;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 20px;
+            color: #000;
+        }
+        p {
+            color: #656689;
+            font-size: 14px;
+        }
+    }
+}
+
+.products {
+    h2 {
+        color: #000;
+        font-size: 28px;
+        position: relative;
+        margin-bottom: 3rem;
+        &::after {
+            border-top: 4px solid $tagsColor;
+            content:"";
+            position: absolute;
+            top: 100%; left: 0; right: 0; bottom: 0;
+            width: 10%;
+            z-index: -1;
+        }
+    }
+    .all {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2rem;
+        h1 {
+            font-size: 40px;
+            color: #000;
+        }
+    }
+}
+
+.Facilities {
+    background-image: url('../../img/Group\ 48095579.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 5rem 0 0 0;
+    h1 {
+        font-size: 48px;
+        color: #000;
+    }
+    p {
+        color: #656689;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 22px;
+        color: #000;
+    }
+    .we {
+        height: 65vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        // padding-top: 5rem;
+        padding: 5rem 1rem 1rem 1rem;
+    }
+}
+
+.gallery {
+    padding: 5rem 0;
+    h1 {
+        font-size: 48px;
+        color: #000;
+    }
+    span {
+        color: #656689;
+        font-size: 16px;
+    }
+    img {
+        margin-bottom: 1rem;
+        background-size: cover;
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+
+.dog {
+    padding: 8rem 0;
+    margin-bottom: 5rem;
+    position: relative;
+    background-image: url('../../img/BG.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    h1 {
+        font-size: 48px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 1rem;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        margin-bottom: 3rem;
+        li {
+            font-size: 14px;
+            color: #1C103B;
+            margin-bottom: .6rem;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .cat3 {
+        width: 280px;
+        height: 220px;
+        background-size: cover;
+        position: absolute;
+        background-position: center center;
+        right: 9rem;
+        bottom: -1rem;
+    }
+    .cat1 {
+        width: 280px;
+        height: 220px;
+        right: 1rem;
+        top: -1rem;
+        background-size: cover;
+        position: absolute;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+        height: 100%;
+        .take {
+            height: 100%;
+            width: 100%;
+            padding-left: 1rem;
+            h1 {
+                color: #000;
+                font-size: 55px;
+                margin-top: 6rem;
+            }
+        }
+        .cute {
+            position: unset;
+        }
+    }
+    .services {
+        height: 100%;
+        padding: 5rem 0;
+    }
+    .dog {
+        height: 100%;
+    }
+    .Facilities {
+        background: none;
+        height: 100%;
+        margin: 5rem 0;
+        .we {
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            // padding-top: 5rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+$bgColor: #FFF;
+$mainColor: #000;
+$headerColor: #868794;
+$tagsColor: #FFD56E;
+
+
+.footer {
+    background-color: #FFF4EA;
+    padding: 3rem 0 1.5rem 0;
+    img {
+        // width: 120px;
+        // height: 80px;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-size: 16px;
+        color: #9494A5;
+        margin-bottom: 1.5rem;
+    }
+    h1 {
+        color: #000;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-bottom: 1rem;
+            a {
+                color: #9494A5;
+                text-decoration: none;
+                font-size: 14px;
+                transition: all .3s;
+                &:hover {
+                    color: $tagsColor;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+    .copyRight {
+        border-top: 2px solid #FFB800;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        p {
+            color: #141414;
+            font-size: 14px;
+            margin: 0;
+            a {
+                text-decoration: none;
+                strong {
+                    color: #C69749;
+                }
+            }
+        }
+    }
+    .social {
+        display: flex;
+        margin-top: 2rem;
+        a {
+            margin-right: 1rem;
+            font-size: 16px;
+            background-color: #FFF;
+            color: $tagsColor;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s;
+            &:hover {
+                background-color: $tagsColor;
+                color: #FFF;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        border-radius: 0px;
+        img {
+            // width: 120px !important;
+            // height: 80px;
+        }
+        .copyRight {
+            border-top: none;
+            display: block;
+            text-align: center;
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+        .social {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+$bgColor: #FFF;
+$mainColor: #000;
+$headerColor: #868794;
+$tagsColor: #FFD56E;
+
+
+.contact {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+        background: transparent;
+        border-radius: 8px;
+        padding: 1rem;
+        img {
+            width: 100px;
+            height: 75px;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            white-space: nowrap !important;
+            font-size: 35px !important;
+            font-weight: bold !important;
+            color: #FEFCFC !important;
+        }
+        label {
+            white-space: nowrap;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+        .form-contact {
+            background: rgba(0, 0, 0, 0.11);
+            border-radius: 8px;
+            width: 100%;
+            border: none;
+            margin-bottom: .6rem;
+            outline: none;
+            padding: .6rem 1rem;
+            &::placeholder {
+                font-size: 12px;
+                color: #000;
+            }
+        }
+        .error {
+            color: #f00 !important;
+            font-size: 12px !important;
+        }
+    }
+    .map {
+        background-color: #FFB800;
+        height: 560px;
+        width: 20%;
+        position: absolute;
+        right: 0;
+    }
+    .google-map {
+        padding-bottom: 50%;
+        position: relative;
+        // height: 100%;
+        margin-top: 30px;
+        height: 500px;
+    }
+    .google-map iframe {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+    .base {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        div {
+            h1 {
+                font-size: 32px;
+                font-weight: bold;
+                color: #FFB800;
+            }
+            a {
+                font-size: 16px;
+                color: #000;
+            }
+        }
+    }
+    .social {
+        color: #FFB800;
+        margin-top: 2rem;
+        a {
+            font-size: 26px;
+            color: #000;
+            margin-right: 0.9rem;
+        }
+    }
+}

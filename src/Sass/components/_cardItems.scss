@@ -1,0 +1,38 @@
+
+$bgColor: #FFF;
+$mainColor: #000;
+$headerColor: #868794;
+$tagsColor: #FFD56E;
+
+.card {
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    span {
+        display: block;
+        color: #000;
+        font-size: 22px;
+    }
+    p {
+        color: #979697;
+        font-size: 16px;
+    }
+    img {
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+    }
+    .card-price {
+        margin-bottom: 3rem;
+        span {
+            display: inline;
+            color: #000;
+            font-size: 16px;
+        }
+        .offer {
+            color: #FF4F4F;
+            margin-left: 1rem;
+            text-decoration: line-through;
+        }
+    }
+}

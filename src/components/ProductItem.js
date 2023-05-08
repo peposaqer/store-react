@@ -1,5 +1,5 @@
 import React from "react";
-import offer from "../img/Group 338.svg"
+// import offer from "../img/Group 338.svg"
 import { Link } from "react-router-dom";
 
 export default function ProductItem(props) {
@@ -7,30 +7,16 @@ export default function ProductItem(props) {
 
   return (
     <>
-      <div className="card uu">
-        <Link to="#!"><img src={offer} className="offer-img" /></Link>
-        <img src={product.image} className="card-img-top" alt="..." />
+      <div className="card">
         <div className="card-body">
+            <img src={product.image} alt="s s" />
+            <span>{product.title}</span>
             <p>{product.description}</p>
             <div className="card-price">
-                <div>
-                    <h1>{product.price}<span>LE</span></h1>
-                    <div className="d-flex product">
-                        <span className="dis">{product.discount}</span>
-                        <span className="offer">{product.offer}</span>
-                    </div>
-                </div>
-                <img src={product.brandLogo.default} />
+              <span>{product.price} EGP</span>
+              <span className="offer">{product.discount} EGP</span>
             </div>
-            <div className='stars'>
-                <img className='star' src={product.star} />
-                <img className='star' src={product.star} />
-                <img className='star' src={product.star} />
-                <img className='star' src={product.star} />
-                <img className='star' src={product.starActive} />
-                <span className='num'>{product.numOfStars} of 5</span>
-            </div>
-            <Link to={"/Product/" + product.id} className="buy">
+            <Link to={"/Product/" + product.id} className="buy mt-5">
               Buy Now
             </Link>
         </div>

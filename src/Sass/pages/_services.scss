@@ -1,0 +1,67 @@
+$bgColor: #FFF;
+$mainColor: #000;
+$headerColor: #868794;
+$tagsColor: #FFD56E;
+
+.best {
+    padding: 5rem 0;
+    h1 {
+        color: #000;
+        font-size: 48px;
+    }
+    span {
+        font-size: 18px;
+        color: #656689;
+    }
+    .pet {
+        background-color: #FFFAF5;
+        // border: 2px solid #FFD56E;
+        background-image: url('../../img/Group\ 480955483.png');
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        img {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+        }
+        strong {
+            font-weight: bold;
+            color: #000;
+            font-size: 16px;
+        }
+        span {
+            font-weight: bold;
+            color: #000;
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.product {
+    padding: 5rem 0;
+    h1 {
+        color: #000;
+        font-size: 48px;
+    }
+    span {
+        font-size: 18px;
+        color: #656689;
+    }
+}
+
+@media (max-width: 450px) {
+}
